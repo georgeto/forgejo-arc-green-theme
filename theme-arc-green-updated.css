@@ -1,5 +1,6 @@
 @import "./chroma/dark.css";
 @import "./codemirror/dark.css";
+@import "../markup/dark.css";
 
 :root {
   --is-dark-theme: true;
@@ -57,7 +58,6 @@
   --color-secondary-alpha-70: #525767b3;
   --color-secondary-alpha-80: #525767cc;
   --color-secondary-alpha-90: #525767e1;
-  --color-secondary-button: var(--color-secondary-dark-4);
   --color-secondary-hover: var(--color-secondary-dark-3);
   --color-secondary-active: var(--color-secondary-dark-2);
   /* console colors - used for actions console and console files */
@@ -183,7 +183,6 @@
   --color-orange-badge: #f2711c;
   --color-orange-badge-bg: #f2711c1a;
   --color-orange-badge-hover-bg: #f2711c4d;
-  --color-git: #f05133;
   --color-logo: #609926;
   /* target-based colors */
   --color-body: #2e323e;
@@ -211,6 +210,8 @@
   --color-active: #ffffff24;
   --color-menu: #1e252e;
   --color-card: #1e252e;
+  --fancy-card-bg: #14171a;
+  --fancy-card-border: #3b444a;
   --color-markup-table-row: #ffffff06;
   --color-markup-code-block: #ffffff16;
   --color-markup-code-inline: #2e4433;
@@ -223,7 +224,6 @@
   --color-placeholder-text: #8a8e99;
   --color-editor-line-highlight: var(--color-primary-light-5);
   --color-editor-selection: var(--color-primary-alpha-50);
-  --color-project-board-bg: var(--color-secondary-light-2);
   --color-project-column-bg: var(--color-secondary-light-2);
   --color-caret: var(--color-text); /* should ideally be --color-text-dark, see #15651 */
   --color-reaction-bg: #ffffff12;
@@ -233,7 +233,6 @@
   --color-tooltip-bg: #000000f0;
   --color-nav-bg: #232834;
   --color-nav-hover-bg: #383c47;
-  --color-nav-text: var(--color-text);
   --color-secondary-nav-bg: #232834;
   --color-label-text: #dfe3ec;
   --color-label-bg: #7c84974b;
@@ -292,6 +291,20 @@
   --color-syntax-nonmatching-bracket-bg: #cc484848;
   accent-color: var(--color-accent);
   color-scheme: dark;
+
+  /* pattern colors for image diff */
+  --checkerboard-color-1: #313131;
+  --checkerboard-color-2: #212121;
+  --color-indicator-offline: #a1a1aa;
+  --color-indicator-offline-20: #a1a1aa1a;
+  --color-indicator-idle: #16a34a;
+  --color-indicator-idle-20: #16a34a1a;
+  --color-indicator-active: #2185d0;
+  --color-indicator-active-20: #2185d033;
+
+  /* Introduced in forgejo/5470fd013102ae8712d70c9b2c1f6042ef2642a1 */
+  --color-selection-bg: var(--color-primary-light-1);
+  --color-selection-fg: var(--color-white);
 }
 
 /* invert emojis that are hard to read otherwise */
